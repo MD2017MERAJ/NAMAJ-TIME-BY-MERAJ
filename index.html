@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaj Times Digital Watch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Namaj Times</h1>
+            <h2>BY </h2>
+            <h2>MD MERAJ </h2>
+            <div class="digital-clock" id="clock">00:00:00</div>
+            <div class="date" id="date">Day, Month 00, 0000</div>
+        </div>
+
+        <div class="prayer-times">
+            <div class="prayer" id="fajr">
+                <div class="prayer-name">Fajr</div>
+                <div class="prayer-time">05:30 AM</div>
+                <div class="prayer-status" id="fajr-status"></div>
+            </div>
+            <div class="prayer" id="dhuhr">
+                <div class="prayer-name">Dhuhr</div>
+                <div class="prayer-time">12:30 PM</div>
+                <div class="prayer-status" id="dhuhr-status"></div>
+            </div>
+            <div class="prayer" id="asr">
+                <div class="prayer-name">Asr</div>
+                <div class="prayer-time">03:45 PM</div>
+                <div class="prayer-status" id="asr-status"></div>
+            </div>
+            <div class="prayer" id="maghrib">
+                <div class="prayer-name">Maghrib</div>
+                <div class="prayer-time">06:15 PM</div>
+                <div class="prayer-status" id="maghrib-status"></div>
+            </div>
+            <div class="prayer" id="isha">
+                <div class="prayer-name">Isha</div>
+                <div class="prayer-time">08:00 PM</div>
+                <div class="prayer-status" id="isha-status"></div>
+            </div>
+        </div>
+
+        <div class="next-prayer" id="next-prayer">
+            Next Prayer: Fajr at 05:30 AM
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

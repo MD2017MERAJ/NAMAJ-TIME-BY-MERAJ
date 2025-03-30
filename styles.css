@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 25px;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #2c786c;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.digital-clock {
+    font-size: 32px;
+    font-weight: bold;
+    color: #004445;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 14px;
+    color: #666;
+}
+
+.prayer-times {
+    margin-bottom: 20px;
+}
+
+.prayer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    transition: all 0.3s ease;
+}
+
+.prayer.active {
+    background-color: #2c786c;
+    color: white;
+}
+
+.prayer.passed {
+    opacity: 0.7;
+}
+
+.prayer-name {
+    font-weight: bold;
+    width: 80px;
+    text-align: left;
+}
+
+.prayer-time {
+    font-weight: bold;
+    width: 80px;
+    text-align: center;
+}
+
+.prayer-status {
+    width: 20px;
+    text-align: right;
+}
+
+.next-prayer {
+    background-color: #004445;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Icons for prayer status */
+.fa-check-circle {
+    color: #2c786c;
+}
+
+.fa-bell {
+    color: #f8b400;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
